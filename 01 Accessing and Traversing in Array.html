@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRay</title>
+</head>
+<body>
+  
+    
+<script>
+    let numbers = [1,2,3,33,444,222,5,55,88,99,9100,3333,5555,3333]
+
+    function get(){
+        let el = document.getElementById("element");
+        el.value = parseInt(el.value)
+        console.log(typeof(el.value))
+        if(el.value<numbers.length && typeof parseInt(el.value)==="number" && el.value>=0)
+        {
+           alert(` value at index ${el.value} is ${numbers[el.value]}`)
+        }
+
+        else{
+            alert("enter valid index")
+        }
+       
+    
+    }
+</script>
+
+<input  style="width: 500px;" type="text" placeholder="Enter index between 0 to 13 to access Element", id="element">
+
+<button onclick="get()" >click me</button>
+
+</body>
+</html>
