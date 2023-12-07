@@ -2,10 +2,12 @@ let array =[1,2,3,5,6];
 let insertelement= 555;
 let position = 4;
 
-array = array.filter((element)=>
-
+for (let i=array.length; i>=0; i--)
 {
-    return array[element+1] = array[element];
+    console.log("lenth of array is " +array.length-1)
+    console.log(array[i]);
+    array[i+1] = array[i];
+    console.log(array);
 
-})
-console.log(array);
+
+}
